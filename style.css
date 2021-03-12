@@ -1,0 +1,366 @@
+/* MY CSS */
+/* Font */
+@font-face {
+font-family: "Winter Sunrise";
+src: url(https://www.dafont.com/search.php?q=winter+sunrise);}
+
+/* +++++++++++++++++++++++++++++++++++++++++++CONTAINER of INDEX+++++++++++++++++++++++++++++++++++++++++++++++ */
+.Container{width:100%; background-color:white; position:relative; box-sizing:border-box; margin-bottom: 20px;}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++PROFILE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+aside{
+  width:30%;
+  height:5000px;
+  background-color: grey;
+  display:flex;
+  float: left;
+  flex-direction: column;
+  align-items:center;
+}
+aside .boxes{
+  width:100%;
+  height:300px;
+  background-color:white;
+  flex-grow:5;
+  border:3px solid rgb(224, 22, 145);
+  display: flex;
+}
+main{
+  width:70%;
+  height:5000px;
+  right:0;
+  background-color: salmon;
+  position: absolute;
+  display:flex;
+}
+.container{width:100%; font-family: 'Montserrat', sans-serif; opacity: 2; display:flex; justify-content: center; flex-direction: column;}
+.card{ width:100%; background-color: white;}
+.card-body{position: relative; overflow: hidden;}
+.card .btn{text-decoration: none; color:#181819;}
+.navbar-brand{font-size:70px; font-weight:900; font-family:'Times New Roman';}
+.nav-item2{
+  background-image: linear-gradient(45deg,rgba(94, 101, 98, 0.47),rgba(228, 230, 226, 0.3));
+  border-radius: 50px;
+}
+.nav a{color:white; text-transform: uppercase;}
+.nav a:hover{color:#181819;}
+.nav a:hover{transform: scale(1.3);}
+.nav a.active{color:#181819; font-weight:800;}
+.nav h1{font-weight: bold; font-size:20px; color:#181819; margin-top: 15px; line-height: 20px;}
+.main h1{color:white; font-size:70px; font-weight:100;}
+.main h1 span{font-weight: 600; color:#181819;}
+.main p{font-size:20px; font-weight:100; line-height:30px; margin-top:30px; color:white;}
+.social_media{margin-top:90px; position: relative;}
+.Pict{position: absolute; bottom:0; right:0; width:40%;}
+.display-3{position: relative;}
+.f{
+  font-size:80px;
+  font-family:'Dancing Script', cursive;
+}
+.f::after{
+  content:"A";
+  font-size:80px;
+  font-family:'Dancing Script', cursive;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ACCESORIS+++++++++++++++++++++++++++++++++++++++++++ */
+/* Salam and header */
+header{
+  width:100%;
+  height:80px;
+  background-color: white;
+  position: relative;
+}
+.arabic{font-size: 50px;}
+.box1{
+  width:33.33%;
+  height:80px;
+  position: absolute;
+  background-color: white;
+  margin-top: -60px;
+  left:0;
+}
+.box2{
+  width:33.33%;
+  height:80px;
+  position: absolute;
+  background-color: white;
+  margin-top: -60px;
+  right:0;
+}
+/* Description what iQro is */
+.description{background-color: white; margin-bottom: -50px;}
+.Iqro{height:300px; background-color: white; margin-top:100px;}
+.Iqro a{text-decoration:none;}
+.Iqro a h1{font-size: 185px; font-weight: bolder; font-family:'Montserrat',sans-serif; color:#181819; margin-top: -10px;}
+.Iqro a:hover h1{transform: scale(1.1);transition: 0.8s;}
+.paragraph{
+  height:230px;
+  background-color: white;
+  margin-top:120px;
+  font-family: 'Montserrat',sans-serif;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.paragraph p{
+  font-size:18px;
+  text-align: justify;
+  margin-top: 18px;
+}
+.Jannah{
+	font-weight: 900;
+  font-size: 30px;
+}
+.Jannah .J{
+  font-family:'Winter Sunrise', cursive;
+  font-size: 60px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++ CONTENT ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* Alquran 2 */
+.alquran2{
+  background-color:white;
+  padding-bottom: 20px;
+  margin: 0px 0;
+}
+.story .pict{margin-left:-200px;background-color: white;}
+.alquran2 .pict{padding:50px;}
+.alquran2 .describe{margin-bottom: 50px;font-size: 18px; font-family: 'Montserrat',sans-serif;padding:30px;}
+.alquran2 .describe a{
+  width:50px;
+  height:10px;
+  background-color: #181819;
+  font-size: 20px;
+  font-size: 'Montserrat',sans-serif;
+  text-decoration: none;
+  border-radius:10px;
+  color:white;
+  padding:5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.50);
+}
+.alquran2 .pict a:hover img{transform:scale(1.08); transition: 0.8s;}
+.alquran2 .describe h1{font-family:'Winter Sunrise',cursive; font-size: 90px; font-weight: 500;}
+.alquran2 .describe p{text-align: justify;}
+
+/* Description History is in iQro */
+
+.story{
+  background-color:white;
+  padding-bottom: 20px;
+  margin-top:-30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.story .pict{margin-left:-210px;background-color: white;}
+.story .describe{background-color: white;font-size: 18px; font-family: 'Montserrat',sans-serif;padding:30px;}
+.story .describe a{
+  width:50px;
+  height:10px;
+  background-color: #181819;
+  font-size: 20px;
+  font-size: 'Montserrat',sans-serif;
+  text-decoration: none;
+  border-radius:10px;
+  color:white;
+  padding:5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.50);
+  margin-left:250px;
+}
+.story .pict a:hover img{transform:scale(1.08); transition: 0.8s;}
+.story .describe h1{font-family:'Winter Sunrise',cursive; font-size: 90px; font-weight: 500;}
+.story .describe p{text-align: justify;}
+
+/* Description about dzikir,doa,and sholawat product */
+
+.doa{
+  background-color:white;
+  padding-bottom: 20px;
+  margin: 50px 0;
+}
+.story .pict{margin-left:-200px;background-color: white;}
+.doa .pict{padding:50px; order:2;}
+.doa .describe{font-size: 18px; font-family: 'Montserrat',sans-serif;padding:30px;order:1;}
+.doa .describe a{
+  width:50px;
+  height:10px;
+  background-color: #181819;
+  font-size: 20px;
+  font-size: 'Montserrat',sans-serif;
+  text-decoration: none;
+  border-radius:10px;
+  color:white;
+  padding:5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.50);
+  margin-left: -0px;
+}
+.doa .pict a:hover img{transform:scale(1.08); transition: 0.8s;}
+.doa.describe h1{font-family:'Winter Sunrise',cursive; font-size: 90px; font-weight: 500;}
+.doa .describe p{text-align: justify;}
+
+/* Description about learning islam products */
+
+.learning_islam{
+  background-color:white;
+  padding-bottom: 20px;
+  margin-top:-30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.learning_islam .pict{background-color: white;}
+.learning_islam .describe{background-color: white;font-size: 18px; font-family: 'Montserrat',sans-serif;padding:30px;}
+.learning_islam .describe a{
+  width:50px;
+  height:10px;
+  background-color: #181819;
+  font-size: 20px;
+  font-size: 'Montserrat',sans-serif;
+  text-decoration: none;
+  border-radius:10px;
+  color:white;
+  padding:5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.50);
+  margin-left:20px;
+}
+.learning_islam .pict a:hover img{transform:scale(1.08); transition: 0.8s;}
+.learning_islam .describe h1{font-family:'Winter Sunrise',cursive; font-size: 90px; font-weight: 500;}
+.learning_islam .describe p{text-align: justify;}
+
+/* Tausiyah */
+
+.tausiyah{
+  background-color:white;
+  padding-bottom: 20px;
+  margin-top:-30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.tausiyah .pict{background-color: white;}
+.tausiyah .describe{background-color: white;font-size: 18px; font-family: 'Montserrat',sans-serif;padding:30px;}
+.tausiyah .describe a{
+  width:50px;
+  height:10px;
+  background-color: #181819;
+  font-size: 20px;
+  font-size: 'Montserrat',sans-serif;
+  text-decoration: none;
+  border-radius:10px;
+  color:white;
+  padding:5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.50);
+  margin-left:240px;
+}
+.tausiyah .pict a:hover img{transform:scale(1.08); transition: 0.8s;}
+.tausiyah .describe h1{font-family:'Winter Sunrise',cursive; font-size: 90px; font-weight: 500;}
+.tausiyah .describe p{text-align: justify;}
+
+
+/* ===================Countdown================= */
+
+.Countdown{background-color: white; margin-top:50px;}
+.header{font-size:300px; margin:auto;}
+.demo{
+  margin: auto; background-image:linear-gradient(45deg,rgba(0, 0, 0, 0.96),rgba(1, 3, 4, 0.85));
+  color:white; text-align:center; line-height:120px; font-family: 'Montserrat',sans-serif; font-size:60px;
+  border-radius: 40px; box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.50); align-content: center;
+}
+
+/* ====================Footer==================== */
+
+footer{width:100%; height:80px; text-align:center; font-family:'Montserrat',sans-serif; line-height:80px; position:relative;}
+
+/*+++++++++++++++++++++++++++++++++++++++++++ RESPONSIVE WEB ++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (min-width:600px) {
+
+  .nav-link{text-transform: capitalize; margin-right: 5px;}
+
+  /* ========Alquran and Hadist======== */
+  .alquran{display: flex; justify-content: space-evenly; flex-direction: row;}
+  .box{width:30%;}
+  .box.three{transform: scale(1.2); margin:25px;}
+
+  .description{width:100%; height:500px; display:flex; flex-direction:row; justify-content: center;}
+  .Iqro{width:33.33%; display: flex;}
+  .paragraph{width:50%;display: flex;}
+
+  .alquran2{width:100%;  display:flex; flex-direction:row; justify-content:space-between;}
+  .alquran2 .pict{ width:30%; margin-left:-60px; margin-top: -60px;}
+  .alquran2 .describe{width:60%; margin-left: -60px; margin-top:50px;}
+
+  /* ========History or Story======== */
+
+  .story{width:100%;}
+  .story .describe {width:70%;}
+  .story .pict{ margin-top:-30px; margin-left:-180px; width:20%;}
+  .story .describe{width:60%; margin-top:50px;}
+
+  /* ========Doa======== */
+
+  .doa{width:100%; display: flex; flex-direction: row; justify-content:space-between;}
+  .doa .pict{  width:30%; height:100px; margin-right:90px; margin-top:-120px;}
+  .doa .describe{width:60%; margin-top:90px; margin-left: 100px;}
+
+  /* =========Learn Islam======== */
+
+  .learning_islam{width:100%; margin-top:80px;}
+  .learning_islam .describe {width:70%;}
+  .learning_islam .pict{ margin-top:-30px; margin-right:280px; width:20%;}
+  .learning_islam .describe{width:60%; margin-top:50px;}
+
+  /* ============Tausiyah=========== */
+  .tausiyah{width:100%; margin-top:10px;}
+  .tausiyah .describe {width:70%;}
+  .tausiyah .pict{ margin-right:530px; width:20%;}
+  .tausiyah .describe{width:60%; margin-top:50px;}
+
+  /* ========Countdown Ramadhan======= */
+
+  .Countdown{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100%;
+  }
+  .header{width:600px; height:50px;}
+  .demo{width:600px; height:120px;}
+
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++ CLEAR FIX ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
