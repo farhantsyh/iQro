@@ -1,0 +1,298 @@
+#include <iostream>
+using namespace std;
+
+struct daftar{
+	string nama[10];
+	int nomor[10];
+	int harga[10];
+	int stok[10];
+}; 
+int main ()
+{
+	int cari,no_brg,pengurutan,tampung_nomor,tampung_harga,tampung_stok;
+	bool found;
+	string tampung_nama;
+	daftar barang;
+	;
+	
+	barang.nama[0] = "OBENG";
+	barang.nomor[0]= 1;
+	barang.harga[0]= 13500;
+	barang.stok[0]=45;
+	
+	barang.nama[1] = "GEMBOK";
+	barang.nomor[1]= 2;
+	barang.harga[1]= 18900;
+	barang.stok[1]=29;
+	
+	barang.nama[2] = "TANG";
+	barang.nomor[2]= 3;
+	barang.harga[2]= 12500;
+	barang.stok[2]=14;
+	
+	barang.nama[3] = "KABEL";
+	barang.nomor[3]= 4;
+	barang.harga[3]= 5500;
+	barang.stok[3]=31;
+	
+	barang.nama[4] = "SABUN";
+	barang.nomor[4]= 5;
+	barang.harga[4]= 2000;
+	barang.stok[4]=50;
+	
+	barang.nama[5] = "ODOL";
+	barang.nomor[5]= 6;
+	barang.harga[5]= 3100;
+	barang.stok[5]=22;
+	
+	barang.nama[6] = "PEL";
+	barang.nomor[6]= 7;
+	barang.harga[6]= 9000;
+	barang.stok[6]=65;
+	
+	barang.nama[7] = "SAPU";
+	barang.nomor[7]= 8;
+	barang.harga[7]= 13800;
+	barang.stok[7]=11;
+	
+	barang.nama[8] = "PISAU";
+	barang.nomor[8]= 9;
+	barang.harga[8]= 22000;
+	barang.stok[8]=5;
+	
+	barang.nama[9] = "PIRING";
+	barang.nomor[9]= 10;
+	barang.harga[9]= 3300;
+	barang.stok[9]=42;
+	
+	for (int i=0; i<10;i++){
+		
+			cout << barang.nomor[i]<<"  "<<barang.nama[i]<<"  "<<barang.harga[i]<<"  "<<barang.stok[i]<<endl;
+		}
+		cout<<endl;
+		
+		
+	// menu pencarian	
+	cout<<"Pilih Pencarian Berdasarkan : "<<endl;
+	cout<<" 1. Nomor barang  "<<endl;
+	cout<<" 2. Harga barang < 5000 "<<endl;
+	cout<<" 3. Data stok > 30 "<<endl;
+	cout<<endl<<"Pilihan : ";
+	cin >>cari;
+	cout<<endl;
+	
+	cout<<"====================================="<<endl;
+	//pencarian berdasarkan nomor barang
+	if (cari == 1){
+		cout << " Nomor Barang : ";
+		cin >>no_brg;
+		cout<<endl;
+		
+	found = false;
+	int i = 0;
+	while ((i<10) && (!found)){
+		if ( no_brg == barang.nomor[i])
+			found = true;
+		else
+			i++;
+		
+	} 
+	if (found){
+			
+			cout<< "Nama Barang : "<<barang.nama[i]<<endl;
+			cout<< "Harga Barang : "<<barang.harga[i]<<endl;
+			cout<< "Stok Barang : "<<barang.stok[i]<<endl;			
+	}
+		
+	}
+	//pencarian berdasarkan harga <5000
+	else if(cari==2){
+		
+		
+			cout<<"Harga Kurang dari 5000 "<<endl;
+			cout<<endl;
+			int i = 0;
+				while (i<10){
+					if (  barang.harga[i] < 5000 ){
+						
+					cout<< "Nama Barang : "<<barang.nama[i]<<endl;
+					cout<< "Harga Barang : "<<barang.harga[i]<<endl;
+					cout<< "Stok Barang : "<<barang.stok[i]<<endl;
+					cout<<endl;
+					}	
+					
+				i++;
+		
+				}
+		
+	}
+	//pencarian berdasarkan stok > 30
+	else if ( cari = 3){
+			
+			cout<< "Stok Barang lebih dari 30"<<endl;
+			cout<<endl;
+			int i = 0;
+				while (i<10){
+					if (  barang.stok[i] > 30 ){
+						
+					cout<< "Nama Barang : "<<barang.nama[i]<<endl;
+					cout<< "Harga Barang : "<<barang.harga[i]<<endl;
+					cout<< "Stok Barang : "<<barang.stok[i]<<endl;
+					cout<<endl;
+					}	
+					
+				i++;
+		
+				}
+	}
+	else{
+		
+	}
+	
+	//menu sorting
+	
+	cout<<endl;
+	cout<<"====================================="<<endl;
+	
+	cout<< "Pengurutan Barang Berdasarkan Harga "<<endl;
+	cout<<endl;
+	cout<< "1. Mulai dari Harga Terendah (BUBBLE SORT)"<<endl;
+	cout<< "2. Mulai dari Harga Terendah (INSERTION SORT)"<<endl;
+	cout<< "3. Mulai dari Harga Tertinggi (MERGE SORT)"<<endl;
+	cout<< "4. Mulai dari Harga Tertinggi (SHELL SHORT)"<<endl;
+	cout<<endl;
+	cout<<"Pilihan : ";cin>>pengurutan;
+	
+	
+	//daftar barang dari Harga Terendah (bubble sort)
+	if (pengurutan == 1){
+		
+		for (int i = 0; i < 10; i++){
+			for (int j = i+1 ; j<10; j++){
+				if ( barang.harga[i] > barang.harga[j]){
+					
+						tampung_nomor = barang.nomor[i];
+						tampung_nama= barang.nama[i];
+						tampung_harga= barang.harga[i];
+						tampung_stok= barang.stok[i];
+						
+						barang.nomor[i] = barang.nomor[j];
+						barang.nama[i] = barang.nama[j];
+						barang.harga[i]= barang.harga[j];
+						barang.stok[i]=barang.stok[j];
+						
+						barang.nomor[j] = tampung_nomor;
+						barang.nama[j] = tampung_nama;
+						barang.harga[j] = tampung_harga;
+						barang.stok[j] = tampung_stok;	
+								
+				}
+			}
+		}
+		
+		cout <<"Daftar Barang Mulai dari Harga Terendah (BUBBLE SORT)"<<endl;
+		cout<<endl;
+		
+		
+		for (int i = 0; i < 10; i++){
+		
+			cout<<"Nomor Barang : "<< barang.nomor[i]<<endl;
+			cout<<"Nama Barang : "<<barang.nama[i]<<endl;
+			cout<<"Harga Barang : "<<barang.harga[i]<<endl;
+			cout<<"Stok Barang : "<<barang.stok[i]<<endl;
+			cout<<endl;
+			
+		}
+		
+		
+		
+			
+	}
+	
+	//Daftar Barang dari Harga Terendah (insertion sort)
+	else if(pengurutan == 2){
+		
+		cout<<endl<< "Daftar Barang Mulai dari Harga Terendah (INSERTION SORT)"<<endl;
+		int j;
+		for(int i = 1; i < 10; i++){
+		tampung_nomor = barang.nomor[i];
+		tampung_nama= barang.nama[i];
+		tampung_harga= barang.harga[i];
+		tampung_stok= barang.stok[i];
+		
+		j=i-1;
+	
+	while (( j >= 0) && (barang.harga[j] > tampung_harga)){
+		
+		barang.nomor[j+1] = barang.nomor[j];
+		barang.nama[j+1] = barang.nama[j];
+		barang.harga[j+1]= barang.harga[j];
+		barang.stok[j+1]=barang.stok[j];
+		j = j-1;
+		
+}
+	
+	barang.nomor[j+1] = tampung_nomor;
+	barang.nama[j+1] = tampung_nama;
+	barang.harga[j+1] = tampung_harga;
+	barang.stok[j+1] = tampung_stok;	
+	}
+
+	cout<<endl;
+	for (int i = 0; i < 10; i++){
+		
+			cout<<"Nomor Barang : "<< barang.nomor[i]<<endl;
+			cout<<"Nama Barang : "<<barang.nama[i]<<endl;
+			cout<<"Harga Barang : "<<barang.harga[i]<<endl;
+			cout<<"Stok Barang : "<<barang.stok[i]<<endl;
+			cout<<endl;
+		
+	}
+	}
+	
+	cout<<"Daftar Barang dari Harga Tertinggi (shell sort)"<<endl;
+		 
+		  
+    for (int i = 10 / 2; i > 0; i = i / 2) {
+        for (int j = i; j < 10; j++) {
+            for (int k = j - i; k >= 0; k = k - i) {
+                if (barang.harga[k + i] < barang.harga[k])
+                    break;
+                else {
+					
+					tampung_nomor = barang.nomor[k];
+				tampung_nama= barang.nama[k];
+				tampung_harga= barang.harga[k];
+				tampung_stok= barang.stok[k];
+						
+				barang.nomor[k] = barang.nomor[k+i];
+				barang.nama[k] = barang.nama[k+i];
+				barang.harga[k]= barang.harga[k+i];
+				barang.stok[k]=barang.stok[k+i];
+						
+				barang.nomor[k+i] = tampung_nomor;
+				barang.nama[k+i] = tampung_nama;
+				barang.harga[k+i] = tampung_harga;
+				barang.stok[k+i] = tampung_stok;	
+				
+                }
+            }
+            
+        }
+    }
+   	cout<<endl;
+	for (int i = 0; i < 10; i++){
+		
+			cout<<"Nomor Barang : "<< barang.nomor[i]<<endl;
+			cout<<"Nama Barang : "<<barang.nama[i]<<endl;
+			cout<<"Harga Barang : "<<barang.harga[i]<<endl;
+			cout<<"Stok Barang : "<<barang.stok[i]<<endl;
+			cout<<endl;
+	}
+	
+
+			
+			
+			
+			
+}
